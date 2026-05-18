@@ -1,7 +1,9 @@
 import express from 'express';
 import userRouter from './routes/users.routes.js';
+import rateLimitMiddleware from './middleware/rateLimit.middleware.js';
 const app = express();
 app.use(express.json());
+app.use(rateLimitMiddleware);
 app.use('/api', userRouter);
 // error middleware
 app.use((err, req, res) => {
