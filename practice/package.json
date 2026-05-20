@@ -1,0 +1,16 @@
+{
+  "name": "express-ts-app",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/events": "^3.0.3",
+    "tsx": "^4.22.0"
+  }
+}
